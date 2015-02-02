@@ -1,3 +1,5 @@
 {
-  "request": "2.30.0"
+  "request": "2.30.0",
+  "request-image-size": "1.1.1",
+  "cheerio": "0.18.0"
 }

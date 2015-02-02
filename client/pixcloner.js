@@ -28,5 +28,11 @@ Template.submitImage.events({
     Meteor.call('uploadImageFromUrl', urlObj, function(error, result){
       if (error) console.log(error);
     });
+  },
+  'click #from-url-image button': function(ev, tpl){
+    var url = $('#from-url-image input[type="text"]').val();
+    Meteor.call('detectImageFromUrl', url, function(error, result){
+      if (error) console.log(error);
+    });
   }
 });
